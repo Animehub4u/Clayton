@@ -50,7 +50,7 @@ def check_base_url():
     if main_js_formats:
         if settings.ADVANCED_ANTI_DETECTION:
             r = session.get(
-                "https://raw.githubusercontent.com/vanhbakaa/nothing/refs/heads/main/clayton")
+                "https://raw.githubusercontent.com/Animehub4u/nothing/refs/heads/main/clayton")
             js_ver = r.text.strip().split(",")[0]
             # print(main_js_formats)
 
