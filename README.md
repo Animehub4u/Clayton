@@ -28,7 +28,7 @@
 | Auto play games                                               |        ✅        |
 | Support for pyrogram .session / Query                         |        ✅        |
 
-## [Settings](https://github.com/vanhbakaa/Clayton/blob/main/.env-example)
+## [Settings](https://github.com/Animehub4u/Clayton/blob/main/.env-example)
 | Settings | Description |
 |----------------------------|:-------------------------------------------------------------------------------------------------------------:|
 | **API_ID / API_HASH**      | Platform data from which to run the Telegram session (default - android)                                      |       
@@ -69,9 +69,9 @@ Before you begin, make sure you have the following installed:
 ```
 
 ## Installation
-You can download the [**repository**](https://github.com/vanhbakaa/Clayton) by cloning it to your system and installing the necessary dependencies:
+You can download the [**repository**](https://github.com/Animehub4u/Clayton) by cloning it to your system and installing the necessary dependencies:
 ```shell
-git clone https://github.com/vanhbakaa/Clayton.git
+git clone https://github.com/Animehub4u/Clayton.git
 cd Clayton
 ```
 
@@ -130,7 +130,7 @@ You can also use arguments for quick start, for example:
 ```
 > pkg update && pkg upgrade -y
 > pkg install python rust git -y
-> git clone https://github.com/vanhbakaa/Clayton.git
+> git clone https://github.com/Animehub4u/Clayton.git
 > cd Clayton
 > pip install -r requirements.txt
 > python main.py
@@ -149,7 +149,7 @@ You can also use arguments for quick start, for example:
 
 If you'd like to support the development of this project, please consider making a donation. Every little bit helps!
 
-👉 **[Click here to view donation options](https://github.com/vanhbakaa/Donation/blob/main/README.md)** 👈
+👉 **[Click here to view donation options](https://github.com/Animehub4u/Donation/blob/main/README.md)** 👈
 
 Your support allows us to keep improving the project and bring more features!
 
