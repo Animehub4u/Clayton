@@ -946,12 +946,12 @@ class Tapper:
                                         logger.warning(
                                             f"{self.session_name} | Failed to complete game: <yellow>{game}</yellow>!")
                                     tickets -= 1
-                                # elif game == "clayball":
-                                #     a = await self.play_clay(http_client)
-                                #     if a is False:
-                                #         logger.warning(
-                                #             f"{self.session_name} | Failed to complete game: <yellow>{game}</yellow>!")
-                                #     tickets -= 1
+                                elif game == "clayball":
+                                    a = await self.play_clay(http_client)
+                                    if a is False:
+                                        logger.warning(
+                                            f"{self.session_name} | Failed to complete game: <yellow>{game}</yellow>!")
+                                    tickets -= 1
                                 else:
                                     logger.warning(f"{self.session_name} | <yellow>Unknown game: {game}</yellow>")
 
@@ -1060,4 +1060,3 @@ async def run_tapper1(tg_clients: list[Client], wallets):
         sleep_ = randint(settings.SLEEP_TIME_BETWEEN_EACH_ROUND[0], settings.SLEEP_TIME_BETWEEN_EACH_ROUND[1])
         logger.info(f"Sleep <red>{sleep_}</red> hours!")
         await asyncio.sleep(sleep_ * 3600)
-
