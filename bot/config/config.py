@@ -1,3 +1,4 @@
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -15,7 +16,7 @@ class Settings(BaseSettings):
     AUTO_JOIN_CHANNEL: bool = False
     AUTO_GAME: bool = True
 
-    GAMES_TO_PLAY: list[str] = ["stack"]
+    GAMES_TO_PLAY: list[str] = ["stack", "clayball"]
 
     DELAY_EACH_ACCOUNT: list[int] = [20, 30] # seconds
     SLEEP_TIME_BETWEEN_EACH_ROUND: list[int] = [2, 3] # hours
@@ -25,4 +26,3 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
-
