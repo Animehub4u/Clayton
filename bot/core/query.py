@@ -6,7 +6,7 @@ from time import time
 from urllib.parse import unquote
 
 import aiohttp
-import cloudscraper
+import cloudscraper 
 from aiocfscrape import CloudflareScraper
 from aiohttp_proxy import ProxyConnector
 from better_proxy import Proxy
@@ -868,12 +868,12 @@ class Tapper:
                                         logger.warning(
                                             f"{self.session_name} | Failed to complete game: <yellow>{game}</yellow>!")
                                     tickets -= 1
-                                # elif game == "clayball":
-                                #     a = await self.play_clay(http_client)
-                                #     if a is False:
-                                #         logger.warning(
-                                #             f"{self.session_name} | Failed to complete game: <yellow>{game}</yellow>!")
-                                #     tickets -= 1
+                                elif game == "clayball":
+                                    a = await self.play_clay(http_client)
+                                    if a is False:
+                                        logger.warning(
+                                            f"{self.session_name} | Failed to complete game: <yellow>{game}</yellow>!")
+                                    tickets -= 1
                                 else:
                                     logger.warning(f"{self.session_name} | <yellow>Unknown game: {game}</yellow>")
 
@@ -982,5 +982,4 @@ async def run_query_tapper1(querys: list[str], wallets):
         sleep_ = randint(settings.SLEEP_TIME_BETWEEN_EACH_ROUND[0], settings.SLEEP_TIME_BETWEEN_EACH_ROUND[1])
         logger.info(f"Sleep <red>{sleep_}</red> hours!")
         await asyncio.sleep(sleep_ * 3600)
-
 
